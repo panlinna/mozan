@@ -54,7 +54,6 @@ html,body{
     left: 0;
     background-color: #494f56;
     height: 1.46rem;
-    display: -webkit-box;
   	display: -webkit-flex;
   	display: -ms-flexbox;
     display: flex;
