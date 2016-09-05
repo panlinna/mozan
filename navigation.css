@@ -54,10 +54,11 @@ html,body{
     left: 0;
     background-color: #494f56;
     height: 1.46rem;
-  	display: -webkit-flex;
+  	/*display: -webkit-flex;
   	display: -ms-flexbox;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-between;*/
+
   }
   #tabBar .tabBar_a{
     display: block;
@@ -72,6 +73,9 @@ html,body{
     background-size: 0.72rem 0.72rem;
     background-repeat: no-repeat;
     background-position: center 4px;
+
+    float: left;
+    margin-right: 1.33rem;
   }
   #tabBar .tabBar_a:nth-child(1){
     background-image: url(images/tabBar/icon_home.png);
@@ -84,4 +88,5 @@ html,body{
   }
   #tabBar .tabBar_a:nth-child(4){
     background-image: url(images/tabBar/icon_user_tab.png);
+    margin-right: 0;
   }
