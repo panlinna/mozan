@@ -8,8 +8,6 @@
   !function(a){function b(){var b=a.document,c=b.documentElement,d=c.getBoundingClientRect().width;document.documentElement.style.fontSize=100*(d/1242)+"px"}window.addEventListener("DOMContentLoaded",function(){b()},!1),window.addEventListener("resize",function(){b()}),b()}(window);
   </script>
   <link rel="stylesheet" href="navigation.css">
-  <link rel="stylesheet" href="allMyLife.css">
-  <link rel="stylesheet" href="footer.css">
   <style>
   .clearfix {*zoom: 1;}
   .clearfix:before,.clearfix:after{display: table; line-height: 0; content: "";}
@@ -19,6 +17,9 @@
     margin:0;
     border: none;
   }
+    p,h1,h2,h3,h4,h5,a,div,span{
+      font-family: "simhei";
+    }
     body{
       background-color: #c2c4c6;
     }
@@ -36,7 +37,7 @@
     }
     .btn_buy{
       display: block;
-      font-size: 0.3rem;
+      font-size: 0.30rem;
       width: 2.6rem;
       height: 0.88rem;
       line-height: 0.88rem;
@@ -67,7 +68,9 @@
     .sort .sort_a:nth-child(1){
       margin-left: 0.3rem;
     }
-
+    .price span{
+      color: #85898e;
+    }
     .bigTop{
       margin-top:0.4rem;
       background-color: #fff;
@@ -97,6 +100,8 @@
       border-bottom: 1px solid #85898e;
     }
     .bigTop_gemini .bigTop_gemini_data{
+      display: block;
+      float: left;
       font-size: 0.3rem;
       margin-left: 0.3rem;
       line-height: 1.68rem;
@@ -116,7 +121,80 @@
         margin: 0.4rem auto;
       }
 
+      .allMyLife .top-conter{
+        background-color: #c2c4c6;
+      }
+      .allMyLife-img{
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      .allMyLife-img img{
+        width: 100%;
+        float: left;
+      }
+      .top-conter .top{
+        width: 6rem;
+        float: left;
+        margin-top: 0.4rem;
+        background-color: #fff;
+      }
+      .top-conter .top:nth-child(2n+1){
+        margin-right: 0.42rem;
+      }
+      .top-conter .top a{
+        display: block;
+        text-decoration: none;
+        width: 100%;
+      }
+      .top-conter .top p{
+        font-size:0.24rem;
+        text-align:center;
+        margin: 0;
+        padding: 0;
+        height:1.14rem;
+        color:#000;
+        border: none;
+      }
+      .top-conter .top .price{
+        color: #ffd800;
+        text-align:center;
+        font-size: 0.32rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.4rem;
+      }
 
+      .footer{
+        margin-top: 0.4rem;
+        background-color: #000000;
+        padding-top: 0.36rem;
+      }
+      .footer .box1 img{
+        display:block;
+        margin:0 auto;
+        margin-bottom: 0.44rem;
+        width:3.65rem;
+        height:1.17rem;
+      }
+      .footer .box2 img{
+        display:block;
+        margin:0 auto;
+        width:3.65rem;
+        height:3.34rem;
+        margin-top: 0.4rem;
+      }
+      .footer p{
+        color:#ffffff;
+        text-align: center;
+        font-size:0.24rem;
+      }
+      .footer .box1 p{
+        line-height: 0.68rem;
+      }
+      .footer .box2_text{
+        margin-top:0.36rem;
+        margin-bottom:0.54rem;
+      }
   </style>
 </head>
 <body>
@@ -141,7 +219,7 @@
              <img src="images/分类图/sort_life.png" alt="">
            </a>
          </div>
-        <div class="bigTop_gemini bigTop ">
+        <div class="bigTop_gemini bigTop clearfix">
             <h3>潮玩预售</h3>
             <a href="http://morethan.cc/wap/good.php?id=433"><img src="images/bigTop_gemini.png" alt="" /></a>
             <p>
@@ -167,124 +245,121 @@
             </p>
             <a href="http://morethan.cc/wap/good.php?id=189&platform=1" class="btn_buy">购买 ￥ 79</a>
         </div>
-
-      <div id="allMyLife" class="clearfix">
-        <div class="allMyLife-bigTop">
-            <p>潮流必备</p>
-            <img class="pic" src="images/image_allMyLife.png" alt="">
-        </div>
-        <div class="allMyLife-goodsImages">
-          <div id="top1">
-            <div class="watch">
-              <a href="http://morethan.cc/wap/good.php?id=432&platform=1">
-                  <img src="images/goods-TopImages/top_1.png" alt="">
-                    <p>Higgs Boson Watch 上帝粒子手表</p>
-                    <div class="price"> &yen388</div>
-              </a>
+        <div class="allMyLife bigTop clearfix">
+            <h3>潮玩必备</h3>
+            <a href="http://morethan.cc/wap/good.php?id=433" class="allMyLife-img clearfix"><img src="images/image_allMyLife.png" alt="" /></a>
+            <div class="top-conter clearfix">
+              <div class="watch top">
+                <a href="http://morethan.cc/wap/good.php?id=432&platform=1">
+                    <img src="images/goods-TopImages/top_1.png" alt="">
+                      <p>Higgs Boson Watch 上帝粒子手表</p>
+                      <div class="price"> &yen388</div>
+                </a>
               </div>
-            <div class="prynt">
-              <a href="http://morethan.cc/wap/good.php?id=418&platform=1">
-                  <img src="images/goods-TopImages/top_2.png" alt="">
-                  <p>Prynt拍立得手机壳 </p>
-                  <div class="price"> &yen1358</div>
-              </a>
+              <div class="prynt top">
+                <a href="http://morethan.cc/wap/good.php?id=418&platform=1">
+                    <img src="images/goods-TopImages/top_2.png" alt="">
+                    <p>Prynt拍立得手机壳 </p>
+                    <div class="price"> &yen1358</div>
+                </a>
+              </div>
+
+              <div class="joker top">
+                <a href="http://morethan.cc/wap/good.php?id=205&platform=1">
+                    <img src="images/goods-TopImages/top_3.png" alt="">
+                    <p>新欢乐斗地主礼帽JOKER款T桖含新欢乐斗地主豪华礼包 </p>
+                    <div class="price"> &yen68</div>
+                </a>
+              </div>
+              <div class="destroyer top">
+                <a href="http://morethan.cc/wap/good.php?id=422&platform=1">
+                    <img src="images/goods-TopImages/top_4.png" alt="">
+                    <p>全金属组装机甲--毁灭者 </p>
+                    <div class="price"> &yen220</div>
+                </a>
+              </div>
+
+              <div class="backpack top">
+                <a href="http://morethan.cc/wap/good.php?id=161&platform=1">
+                    <img src="images/goods-TopImages/top_5.png" alt="">
+                    <p>星球大战暴风兵酷炫3D背包 </p>
+                    <div class="price"> &yen399 <span style="text-decoration:line-through;"> &yen599</span></div>
+                </a>
+              </div>
+              <div class="funko top">
+                <a href="http://morethan.cc/wap/good.php?id=429&platform=1">
+                    <img src="images/goods-TopImages/top_6.png" alt="">
+                    <p>Funko pop星球大战7原力觉醒法斯马摆件公仔魔性#6226</p>
+                    <div class="price"> &yen88</div>
+                </a>
+              </div>
+
+              <div class="shell top">
+                <a href=" http://morethan.cc/wap/good.php?id=201&platform=1">
+                    <img src="images/goods-TopImages/top_7.png" alt="">
+                    <p>复联反浩克装甲i6手机壳</p>
+                    <div class="price"> &yen45</div>
+                </a>
+              </div>
+              <div class="model top">
+                <a href=" http://morethan.cc/wap/good.php?id=192&platform=1">
+                    <img src="images/goods-TopImages/top_8.png" alt="">
+                    <p>复联2模型公仔MARK43</p>
+                    <div class="price"> &yen640 <span style="text-decoration:line-through;"> &yen1200</span></div>
+                </a>
+              </div>
+
+              <div class="camera top">
+                <a href=" http://morethan.cc/wap/good.php?id=413&platform=1">
+                    <img src="images/goods-TopImages/top_9.png" alt="">
+                    <p>驰图CS山狗运动相机4K 1600万像素-银色</p>
+                    <div class="price"> &yen568</div>
+                </a>
+              </div>
+              <div class="police top">
+                <a href="  http://morethan.cc/wap/good.php?id=190&platform=1">
+                    <img src="images/goods-TopImages/top_10.png" alt="">
+                    <p>兔子警官手机壳</p>
+                    <div class="price"> &yen78</div>
+                </a>
+              </div>
+
+              <div class="cloths top">
+                <a href="  http://morethan.cc/wap/good.php?id=455">
+                    <img src="images/goods-TopImages/top_11.png" alt="">
+                    <p>胜利游戏漫画T恤（白色）</p>
+                    <div class="price"> &yen69</div>
+                </a>
+              </div>
+              <div class="meal top">
+                <a href="http://morethan.cc/wap/good.php?id=368&platform=1">
+                    <img src="images/goods-TopImages/top_12.png" alt="">
+                    <p>魔兽电影正版周边 魔兽出行套餐</p>
+                    <div class="price"> &yen220</div>
+                </a>
+              </div>
             </div>
+        </div>
+        <div class="footer">
+          <div class="box1">
+            <img src="images/footerImage/morethan_logo_big.png" alt="">
+              <p>关于魔赞/MORETHAN </p>
+              <p>魔赞是开普乐旗下的P周边专属品牌</p>
+              <p>正版授权，原创设计，超值礼包，一流品质</p>
+              <p>这就是魔赞对周边的定义，这更是魔赞对玩家的承诺</p>
+              <p>我们称之为</p>
+              <p>[magical & more]</p>
           </div>
-          <div id="top2">
-            <div class="joker">
-              <a href="http://morethan.cc/wap/good.php?id=205&platform=1">
-                  <img src="images/goods-TopImages/top_3.png" alt="">
-                  <p>新欢乐斗地主礼帽JOKER款T桖含新欢乐斗地主豪华礼包 </p>
-                  <div class="price"> &yen68</div>
-              </a>
-            </div>
-            <div class="destroyer">
-              <a href="http://morethan.cc/wap/good.php?id=422&platform=1">
-                  <img src="images/goods-TopImages/top_4.png" alt="">
-                  <p>全金属组装机甲--毁灭者 </p>
-                  <div class="price"> &yen220</div>
-              </a>
-            </div>
-          </div>
-          <div id="top3">
-            <div class="backpack">
-              <a href="http://morethan.cc/wap/good.php?id=161&platform=1">
-                  <img src="images/goods-TopImages/top_5.png" alt="">
-                  <p>星球大战暴风兵酷炫3D背包 </p>
-                  <div class="price"> &yen399 <span style="text-decoration:line-through;"> &yen599</span></div>
-              </a>
-            </div>
-            <div class="funko">
-              <a href="http://morethan.cc/wap/good.php?id=429&platform=1">
-                  <img src="images/goods-TopImages/top_6.png" alt="">
-                  <p>Funko pop星球大战7原力觉醒法斯马摆件公仔魔性#6226</p>
-                  <div class="price"> &yen88</div>
-              </a>
-            </div>
-          </div>
-          <div id="top4">
-            <div class="shell">
-              <a href=" http://morethan.cc/wap/good.php?id=201&platform=1">
-                  <img src="images/goods-TopImages/top_7.png" alt="">
-                  <p>复联反浩克装甲i6手机壳</p>
-                  <div class="price"> &yen45</div>
-              </a>
-            </div>
-            <div class="model">
-              <a href=" http://morethan.cc/wap/good.php?id=192&platform=1">
-                  <img src="images/goods-TopImages/top_8.png" alt="">
-                  <p>复联2模型公仔MARK43</p>
-                  <div class="price"> &yen640 <span style="text-decoration:line-through;"> &yen1200</span></div>
-              </a>
-            </div>
-          </div>
-          <div id="top5">
-            <div class="camera">
-              <a href=" http://morethan.cc/wap/good.php?id=413&platform=1">
-                  <img src="images/goods-TopImages/top_9.png" alt="">
-                  <p>驰图CS山狗运动相机4K 1600万像素-银色</p>
-                  <div class="price"> &yen568</div>
-              </a>
-            </div>
-            <div class="police">
-              <a href="  http://morethan.cc/wap/good.php?id=190&platform=1">
-                  <img src="images/goods-TopImages/top_10.png" alt="">
-                  <p>兔子警官手机壳</p>
-                  <div class="price"> &yen78</div>
-              </a>
-            </div>
-          </div>
-          <div id="top6">
-            <div class="cloths">
-              <a href="  http://morethan.cc/wap/good.php?id=455">
-                  <img src="images/goods-TopImages/top_11.png" alt="">
-                  <p>胜利游戏漫画T恤（白色）</p>
-                  <div class="price"> &yen69</div>
-              </a>
-            </div>
-            <div class="meal">
-              <a href="http://morethan.cc/wap/good.php?id=368&platform=1">
-                  <img src="images/goods-TopImages/top_12.png" alt="">
-                  <p>魔兽电影正版周边 魔兽出行套餐</p>
-                  <div class="price"> &yen220</div>
-              </a>
+          <div class="box2 clearfix">
+            <img src="images/footerImage/morethan_weChatQrCode.png" alt="">
+            <div class="box2_text">
+              <p>关注魔赞微信公众号</p>
+              <p>获得更多礼包</p>
+              <p>魔赞微信号：morethance</p>
             </div>
           </div>
         </div>
-      </div>
-      <div id="footer">
-        <div class="box1">
-          <img src="images/footerImage/morethan_logo_big.png" alt="">
-          <p>关于魔赞/MORETHAN <br/>魔赞是开普乐旗下的P周边专属品牌<br/>
-          正版授权，原创设计，超值礼包，一流品质<br/>
-        这就是魔赞对周边的定义，这更是魔赞对玩家的承诺<br/>
-      我们称之为<br/>[magical & more]</p>
-        </div>
-        <div class="box2">
-          <img src="images/footerImage/morethan_weChatQrCode.png" alt="">
-          <p>关注魔赞微信公众号<br/>获得更多礼包<br/>魔赞微信号：morethance</p>
-        </div>
-      </div>
+
          <div id="navigationBar">
            <a href="http://morethan.cc/wap/index.php" class="morethan_logo_small"></a>
            <a href="http://morethan.cc/wap/my.php" class="icon_user_nav"></a>
