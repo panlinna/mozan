@@ -1,0 +1,85 @@
+html,body{
+  padding: 0;
+  margin:0;
+}
+  #navigationBar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    height: 1.32rem;
+  }
+  #navigationBar .morethan_logo_small{
+    display: block;
+    float: left;
+    width: 0.66rem;
+    height: 0.66rem;
+    background-image: url(images/navigationBar/morethan_logo_small.png);
+    background-size: 100% 100%;
+    margin-left: 0.6rem;
+    margin-top: 0.33rem;
+  }
+  #navigationBar #search{
+    display: block;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    width: 8rem;
+    background-color: #494f56;
+    border: none;
+    border-radius: 5px;
+    margin:0 auto;
+    margin-top: 0.19rem;
+    text-align: center;
+    font-size: 0.32rem;
+    background-image: url(images/navigationBar/icon_search.png);
+    background-repeat: no-repeat;
+    background-size: 0.44rem 0.44rem;
+    background-position: 2.4rem center;
+  }
+  #navigationBar .icon_user_nav {
+    display: block;
+    float: right;
+    width: 0.66rem;
+    height: 0.66rem;
+    margin-top: 0.33rem;
+    margin-right: 0.6rem;
+    background-image: url(images/navigationBar/icon_user_nav.png);
+    background-size: 100% 100%;
+  }
+  #tabBar{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #494f56;
+    height: 1.46rem;
+    display: flex;
+    justify-content:space-between;
+  }
+  #tabBar .tabBar_a{
+    display: block;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    color: #ffffff;
+    text-decoration:none;
+    text-align: center;
+    font-size: 0.44rem;
+    line-height: 2.2rem;
+    background-size: 0.72rem 0.72rem;
+    background-repeat: no-repeat;
+    background-position: center 4px;
+  }
+  #tabBar .tabBar_a:nth-child(1){
+    background-image: url(images/tabBar/icon_home.png);
+  }
+  #tabBar .tabBar_a:nth-child(2){
+    background-image: url(images/tabBar/icon_activity.png);
+  }
+  #tabBar .tabBar_a:nth-child(3){
+    background-image: url(images/tabBar/icon_brand.png);
+  }
+  #tabBar .tabBar_a:nth-child(4){
+    background-image: url(images/tabBar/icon_user_tab.png);
+  }

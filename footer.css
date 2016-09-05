@@ -1,0 +1,25 @@
+#footer{
+  background-color: #000000;
+}
+.box1 img{
+  display:block;
+  margin:0 auto;
+  padding-top:0.36rem;
+  width:3.65rem;
+  height:1.17rem;
+}
+.box2 img{
+  display:block;
+  margin:0 auto;
+  width:3.65rem;
+  height:3.34rem;
+}
+p{
+  color:#ffffff;
+  text-align: center;
+  font-size:0.24rem;
+}
+.box2 p{
+  padding-top:0.36rem;
+  padding-bottom:0.54rem;
+}
